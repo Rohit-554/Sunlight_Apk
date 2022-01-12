@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sunlight.choose_mood"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/ba"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logout_choosemood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:fontFamily="@font/cabin"
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:textSize="20sp"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_text"
+        android:text="@string/hey_there"
+        />
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/cabin"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_mood"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_text"
+        />
+    <ScrollView
+        android:id="@+id/sl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+    <LinearLayout
+        android:id="@+id/ll_moods"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="80dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_happy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardMaxElevation="15dp"
+            app:cardPreventCornerOverlap="true"
+            android:backgroundTint="@color/Happy">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/happycolour"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="end"
+                android:layout_marginStart="230dp"
+                android:fontFamily="@font/antonregular"
+                android:padding="12dp"
+                android:text="@string/happy"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_sad"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardMaxElevation="15dp"
+            app:cardPreventCornerOverlap="true"
+            android:backgroundTint="@color/Happy">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/sad3"
+                android:scaleType="centerCrop"
+                />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sadcartonpng"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="12dp"
+                android:fontFamily="@font/antonregular"
+                android:text="@string/sad"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_tired"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardMaxElevation="15dp"
+            app:cardPreventCornerOverlap="true"
+            android:backgroundTint="@color/Happy">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/tired2"
+                android:scaleType="centerCrop"
+                />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sleepingpng" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/antonregular"
+                android:text="@string/exhausted"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+
+                />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_anger"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardMaxElevation="15dp"
+            app:cardPreventCornerOverlap="true"
+            android:backgroundTint="@color/Happy">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/red" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="200dp"
+                android:src="@drawable/anger2"
+                />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antonregular"
+                android:text="@string/anger"
+                android:padding="12dp"
+                android:layout_gravity="end"
+                android:textSize="40sp"
+
+                />
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

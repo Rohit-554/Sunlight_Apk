@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/drawable/edit_text_bg.xml" value="0.22407407407407406" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.27037037037037037" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/drawable/outline.xml" value="0.28177083333333336" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_card_anger.xml" value="0.264" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_card_happy.xml" value="0.264" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_card_sad.xml" value="0.21388888888888888" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_card_tired.xml" value="0.265625" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_chilllocation.xml" value="0.21388888888888888" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_choose_mood.xml" value="0.264" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_login2.xml" value="0.265625" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_main.xml" value="0.2564814814814815" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_memoir.xml" value="0.2601851851851852" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_movie.xml" value="0.21388888888888888" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_movies.xml" value="0.21388888888888888" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_moviesad.xml" value="0.2515625" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_movietired.xml" value="0.265625" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_music_player.xml" value="0.20462962962962963" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/activity_splashs.xml" value="0.265625" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/login_tab_fragement.xml" value="0.265625" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/layout/signup_fragement.xml" value="0.2564814814814815" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15364583333333334" />
+        <entry key="..\:/Android_projects/Sunlight/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.27037037037037037" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

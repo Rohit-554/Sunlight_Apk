@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Sunlight</string>
+    <string name="appname">Moooooood</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="singup">SingUP</string>
+    <string name="signup">signup</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="or_sign_up_using">or Sign Up Using</string>
+    <string name="hey_there">HEY THERE !!</string>
+    <string name="choose_your_mood">CHOOSE YOUR MoooooD…</string>
+    <string name="happy">HAPPY</string>
+    <string name="tired">TIRED</string>
+    <string name="sad">SAD</string>
+    <string name="exhausted">EXHAUSTED</string>
+    <string name="anger">ANGER</string>
+    <string name="what_do_you_want_to_try">What do you want to try</string>
+    <string name="game">GAME</string>
+    <string name="music">Music</string>
+    <string name="chill">CHILL</string>
+    <string name="meditation">MEDITATION</string>
+    <string name="exercise">EXERCISE</string>
+    <string name="memoir">MEMOIR</string>
+    <string name="movies">MOVIES</string>
+    <string name="choose_your_language">CHOOSE YOUR LANGUAGE</string>
+    <string name="watch_vids">WATCH VIDS</string>
+    <string name="jokes">JOKES</string>
+    <string name="edm">EDM</string>
+    <string name="write_some_best_memories">Write Some Best Memories</string>
+    <string name="save">SAVE</string>
+    <string name="express_anger">EXPRESS_ANGER</string>
+    <string name="express">EXPRESS</string>
+    <string name="sunlight">SUNLIGHT</string>
+    <string name="or">or</string>
+    <string name="new_user_register">New User? Register</string>
+    <string name="or_signup_using">or SignUp Using</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541117300376",
+    "project_id": "sunlight-aea10",
+    "storage_bucket": "sunlight-aea10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541117300376:android:4ed9224ed88793976a9aed",
+        "android_client_info": {
+          "package_name": "com.example.sunlight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541117300376-qd6f0idkcof193q4pq5950v5ced683tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJq1XuGJai2UYZNgrftP3B_moy1qUJ0GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541117300376-qd6f0idkcof193q4pq5950v5ced683tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

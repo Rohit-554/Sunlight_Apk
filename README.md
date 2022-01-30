@@ -19,6 +19,8 @@ It's Open for everybody  doesn't matter newbie or expert, If you are a open sour
 <b>⭐Kotlin <br></b>
 <b>⭐Android Studio</b>
 <br>
+<b>⭐Firebase</b></br>
+<br>
 
 # Jump In
 Happy Coding to all, it's your turn now...

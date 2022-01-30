@@ -12,5 +12,14 @@ Fork this repository by clicking on the fork button on the top of this page.
 <br> This will create a copy of this repository in your account.
 <!-- ![fork](https://user-images.githubusercontent.com/48874687/150637471-c23e8ad1-20dc-4948-ac22-5d30042a8fde.png) -->
 
-# Want to contribute
-It's Open for everybody  doesn't matter newbie or expert , If you would like to contribute please go through  [I'm an inline-style link](https://www.google.com)
+# Want to contribute?
+It's Open for everybody  doesn't matter newbie or expert, If you are a open source enthusiast and  would like to contribute , please go through  [Contributing Guidelines](https://github.com/Rohit-554/Sunlight_Apk/blob/master/Contributing.md), it will be grate to see you working on this project.
+
+# Technologies Used 🖥
+<b>⭐Kotlin <br></b>
+<b>⭐Android Studio</b>
+<br>
+
+# Jump In
+Happy Coding to all, it's your turn now...
+ 

@@ -20,11 +20,11 @@ git add filename(with extension)
 ```
 git commit -m "name your issue resolved" 
 ```
-6.Now make a Pr , use the below command and type your user name and password of your github account
+6. Now add  Repo , use the below command and type your user name and password of your github account
 ```
 git remote add origin 'https://github.com/Diversion2k22/Sunlight_Apk'
 ```
-7.Finally Push the the file to the Sunlight Repo
+7. Finally Push the the file to the Sunlight Repo
 ```
 git push -u origin master
 ```

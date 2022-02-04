@@ -4,6 +4,6 @@ It's Open for everybody  doesn't matter newbie or expert, If you are a open sour
 # How to contribute:
 1. Clone this repository:
 ```
-git clone https://github.com/Rohit-554/Sunlight_Apk.git
+git clone https://github.com/Diversion2k22/Sunlight_Apk
 ```
 2. Start Android Studio and open this project.

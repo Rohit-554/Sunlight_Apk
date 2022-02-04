@@ -1,5 +1,5 @@
 # Want to contribute?
-It's Open for everybody  doesn't matter newbie or expert, If you are a open source enthusiast and  would like to contribute , please go through  [Contributing Guidelines](https://github.com/Rohit-554/Sunlight_Apk/blob/master/Contributing.md), it will be grate to see you working on this project.
+It's Open for everybody  doesn't matter newbie or expert, If you are a open source enthusiast and  would like to contribute , Here's How?
 
 # How to contribute:
 1. Clone this repository:
@@ -7,6 +7,7 @@ It's Open for everybody  doesn't matter newbie or expert, If you are a open sour
 git clone https://github.com/Diversion2k22/Sunlight_Apk
 ```
 2. Start Android Studio and open this project..
+
 
 3. After changing files, you can check the changes made to file by typing the command
 ```
@@ -28,8 +29,8 @@ git remote add origin 'https://github.com/Diversion2k22/Sunlight_Apk'
 ```
 git push -u origin master
 ```
+<>
+<b>woooh !! You Made Your Pull Request, now just wait for the owner to merge it to the repo ..</b>
 
-<b>woooh !! Your Pull Request Succeeded wait , now just wait for the owner to merge it to the repo ..</b>
 
-
-<h1>That's All , Thankyou for following the steps Wish you all a happy coding"</h1>
+<h1>That's All, <br>  Thankyou for following the steps,<br>     Wish you all a happy coding"</h1>

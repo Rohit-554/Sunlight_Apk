@@ -10,10 +10,11 @@ will be displayed. <br>
 Fork this repository by clicking on the fork button on the top of this page.
 <img align="right" width="300" height="200" src="https://user-images.githubusercontent.com/48874687/150637471-c23e8ad1-20dc-4948-ac22-5d30042a8fde.png" width="300" height="300"/>
 <br> This will create a copy of this repository in your account.
+<br> Now copy the link by clicking on the Code then follow the [Contributing Guidelines](https://github.com/Rohit-554/Sunlight_Apk/blob/master/Contributing.md), it will be grate to see you working on this project
 <!-- ![fork](https://user-images.githubusercontent.com/48874687/150637471-c23e8ad1-20dc-4948-ac22-5d30042a8fde.png) -->
 
 # Want to contribute?
-It's Open for everybody  doesn't matter newbie or expert, If you are a open source enthusiast and  would like to contribute , please go through  [Contributing Guidelines](https://github.com/Rohit-554/Sunlight_Apk/blob/master/Contributing.md), it will be grate to see you working on this project.
+It's Open for everybody  doesn't matter newbie or expert, If you are a open source enthusiast and  would like to contribute , this is for you. After forking and copying code go through the  [Contributing Guidelines](https://github.com/Rohit-554/Sunlight_Apk/blob/master/Contributing.md).
 
 # Technologies Used 🖥
 <b>⭐Kotlin <br></b>

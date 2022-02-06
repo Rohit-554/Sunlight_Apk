@@ -38,9 +38,20 @@ class SignUp_Fragement : AppCompatActivity() {
                 }
 
                 TextUtils.isEmpty(password.text.toString().trim { it <= ' ' }) -> {
-                    Toast.makeText(this, "Please Enter Your Email", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please Enter Your Password", Toast.LENGTH_SHORT).show()
 
                 }
+                TextUtils.isEmpty(confirm_password.text.toString().trim { it <= ' ' }) -> {
+                    Toast.makeText(this, "Please Enter Your Confirm Password", Toast.LENGTH_SHORT)
+                        .show()
+
+                }
+
+                !password.text.toString().trim { it <= ' ' }.equals( confirm_password.text.toString().trim { it <= ' ' }) -> {
+                    Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT)
+                        .show()
+                }
+
 
 
                 else-> {
@@ -60,8 +71,8 @@ class SignUp_Fragement : AppCompatActivity() {
                                 val intent = Intent(this, choose_mood::class.java)
                                 intent.flags =
                                     Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                                intent.putExtra("Userid", firebaseUser.uid)
-                                intent.putExtra("useremail", firebaseUser.email)
+                                intent.putExtra("UserId", firebaseUser.uid)
+                                intent.putExtra("UserEmail", firebaseUser.email)
                                 startActivity(intent)
                                 finish()
                             } else {

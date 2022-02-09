@@ -1,38 +1,35 @@
 package com.example.sunlight
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.net.Uri
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
 import android.view.WindowManager
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.Sunlight.R
 import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.login_tab_fragement.*
-import kotlin.math.sign
-import androidx.core.app.ActivityCompat.startActivityForResult
-
-import android.content.Intent
-import android.net.Uri
-import android.os.Handler
-import android.text.TextUtils
-import android.widget.Toast
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.tasks.Task
 import com.google.android.gms.common.api.ApiException
-import com.google.android.material.internal.ContextUtils.getActivity
+import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_choose_mood.*
-import kotlinx.android.synthetic.main.login_tab_fragement.password
+import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.login_tab_fragement.*
 import kotlinx.android.synthetic.main.signup_fragement.*
 
 
 const val RC_SIGN_IN = 123
 
 class LoginActivity : AppCompatActivity() {
+//    private lateinit var firebaseAuth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -44,53 +41,53 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
 
-        //BUG :: WHENEVER USER CLICKS LOGIN BUTTON THE APP CLOSES ENABLE THE CODE AND TRY FIXING THE ISSUE
-//        login_btn.setOnClickListener {
-//            when {
-//                TextUtils.isEmpty(signup_email.text.toString().trim { it <= ' ' }) -> {
-//                    Toast.makeText(this, "Please Enter Your Email", Toast.LENGTH_SHORT).show()
-//
-//                }
-//
-//                TextUtils.isEmpty(password.text.toString().trim { it <= ' ' }) -> {
-//                    Toast.makeText(this, "Please Enter Your Email", Toast.LENGTH_SHORT).show()
-//
-//                }
-//
-//
-//                else-> {
-//                    val email: String = signup_email.text.toString().trim() { it <= ' ' }
-//                    val password: String = signup_email.text.toString().trim() { it <= ' ' }
-//                    FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
-//                        .addOnCompleteListener { task ->
-//                            if (task.isSuccessful) {
-//                                val firebaseUser: FirebaseUser = task.result!!.user!!
-//                                Toast.makeText(
-//                                    this,
-//                                    "You Registered Successfully",
-//                                    Toast.LENGTH_SHORT
-//                                ).show()
-//
-//                                val intent = Intent(this, choose_mood::class.java)
-//                                intent.flags =
-//                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-//                                intent.putExtra("Userid",
-//                                    FirebaseAuth.getInstance().currentUser!!.uid
-//                                    )
-//                                startActivity(intent)
-//                                finish()
-//                            } else {
-//                                Toast.makeText(
-//                                    this, task.exception!!.message.toString(),
-//                                    Toast.LENGTH_SHORT
-//                                ).show()
-//                            }
-//                        }
-//                }
-//
-//
-//            }
-//        }
+
+        login_btn.setOnClickListener {
+            when {
+                TextUtils.isEmpty(login_email.text.toString().trim { it <= ' ' }) -> {
+                    Toast.makeText(this, "Please Enter Your Email", Toast.LENGTH_SHORT).show()
+
+                }
+
+                TextUtils.isEmpty(login_password.text.toString().trim { it <= ' ' }) -> {
+                    Toast.makeText(this, "Please Enter Your Password", Toast.LENGTH_SHORT).show()
+
+                }
+
+
+                else-> {
+                    val email: String = login_email.text.toString().trim() { it <= ' ' }
+                    val password: String = login_password.text.toString().trim() { it <= ' ' }
+                   FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener { task ->
+                            if (task.isSuccessful) {
+                                val firebaseUser: FirebaseUser = task.result!!.user!!
+                                Toast.makeText(
+                                    this,
+                                    "You Logged in Successfully.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+
+                                val intent = Intent(this, choose_mood::class.java)
+                                intent.flags =
+                                    Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                intent.putExtra("UserId",
+                                    FirebaseAuth.getInstance().currentUser!!.uid
+                                    )
+                                startActivity(intent)
+                                finish()
+                            } else {
+                                Toast.makeText(
+                                    this, task.exception!!.message.toString(),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                }
+
+
+            }
+        }
 
 
         tv_newuser.setOnClickListener {

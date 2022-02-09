@@ -39,7 +39,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             />
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/Phone_no"
+            android:id="@+id/login_email"
             android:inputType="textEmailAddress"
             android:paddingTop="10dp"
             android:background="@drawable/edit_text_bg"
@@ -61,7 +61,7 @@
             app:layout_constraintWidth_percent="0.8" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/password"
+            android:id="@+id/login_password"
             android:inputType="textPassword"
             android:textColor="@color/black"
             android:textColorHint="#7C7474"
@@ -78,7 +78,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Phone_no"
+            app:layout_constraintTop_toBottomOf="@+id/login_email"
             app:layout_constraintVertical_bias="0"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintWidth_percent="0.8" />
@@ -90,7 +90,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintTop_toBottomOf="@id/login_password"
             app:layout_constraintWidth_percent=".8"
             app:layout_constraintVertical_bias="0.2"
             android:textSize="16sp"
@@ -102,8 +102,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@id/login_btn"
-            app:layout_constraintEnd_toEndOf="@id/password"
-            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintEnd_toEndOf="@id/login_password"
+            app:layout_constraintTop_toBottomOf="@id/login_password"
             android:text="@string/forgot_password"
             app:layout_constraintVertical_bias="0"
             app:flow_horizontalBias="1"

@@ -5,6 +5,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.text.TextUtils
+import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -22,7 +23,7 @@ import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.login_tab_fragement.*
 import kotlinx.android.synthetic.main.signup_fragement.*
-import kotlinx.android.synthetic.main.signup_fragement.password
+import kotlinx.android.synthetic.main.signup_fragement.signup_password
 
 class SignUp_Fragement : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,12 +33,13 @@ class SignUp_Fragement : AppCompatActivity() {
         setContentView(R.layout.signup_fragement)
         signup_btn.setOnClickListener {
             when {
+
                 TextUtils.isEmpty(signup_email.text.toString().trim { it <= ' ' }) -> {
                     Toast.makeText(this, "Please Enter Your Email", Toast.LENGTH_SHORT).show()
 
                 }
 
-                TextUtils.isEmpty(password.text.toString().trim { it <= ' ' }) -> {
+                TextUtils.isEmpty(signup_password.text.toString().trim { it <= ' ' }) -> {
                     Toast.makeText(this, "Please Enter Your Password", Toast.LENGTH_SHORT).show()
 
                 }
@@ -47,16 +49,20 @@ class SignUp_Fragement : AppCompatActivity() {
 
                 }
 
-                !password.text.toString().trim { it <= ' ' }.equals( confirm_password.text.toString().trim { it <= ' ' }) -> {
+                signup_password.text.toString()!= confirm_password.text.toString()-> {
                     Toast.makeText(this, "Password doesn't matched", Toast.LENGTH_SHORT)
                         .show()
+                }
+                !Patterns.EMAIL_ADDRESS.matcher(signup_email.text.toString().trim { it <= ' ' }).matches() -> {
+                    Toast.makeText(applicationContext, "Invalid email address",
+                        Toast.LENGTH_SHORT).show()
                 }
 
 
 
                 else-> {
                     val email: String = signup_email.text.toString().trim() { it <= ' ' }
-                    val password: String = signup_email.text.toString().trim() { it <= ' ' }
+                    val password: String = signup_password.text.toString().trim() { it <= ' ' }
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {

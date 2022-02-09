@@ -70,7 +70,7 @@
                 app:layout_constraintWidth_percent="0.8" />
 
             <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/password"
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"

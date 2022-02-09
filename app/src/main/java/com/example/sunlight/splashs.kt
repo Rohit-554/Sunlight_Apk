@@ -24,10 +24,10 @@ class splashs : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashs)
         sunlight.alpha=0f
-        sunlight.animate().setDuration(4000).alpha(1f).withEndAction{
+        sunlight.animate().setDuration(2000).alpha(1f).withEndAction{
         val intent = Intent(this,LoginActivity::class.java)
         startActivity(intent)
-        overridePendingTransition(android.R.anim.accelerate_interpolator,android.R.anim.fade_out)
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
         finish()
         }
 
